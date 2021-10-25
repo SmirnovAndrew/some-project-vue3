@@ -1,8 +1,8 @@
 import type { NavigationGuardNext, RouteLocationNormalized } from 'vue-router';
-import store from '@/store';
+import { store } from '@/store';
 import { ROOT_ACTIONS_TYPE } from '@/store/names/action.name';
 
-const routerGuardsCheckAuth = async(_to: RouteLocationNormalized, _from: RouteLocationNormalized, next: NavigationGuardNext) => {
+export const routerGuardsCheckAuth = async(_to: RouteLocationNormalized, _from: RouteLocationNormalized, next: NavigationGuardNext): Promise<void> => {
   const isAuth = !!store.state?.user?.userData?.id;
   if (isAuth) {
     next();
@@ -16,5 +16,3 @@ const routerGuardsCheckAuth = async(_to: RouteLocationNormalized, _from: RouteLo
     }
   }
 };
-
-export default routerGuardsCheckAuth;

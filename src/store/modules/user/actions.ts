@@ -3,7 +3,7 @@ import type { ActionContext } from 'vuex';
 import type { UserState } from '@/store/modules/user/state';
 import { USER_MUTATIONS_TYPE } from '@/store/names/mutations.names';
 
-const actions = {
+export const actions = {
   async [USER_ACTIONS_TYPE.FETCH_CURRENT_USER]({ commit }: ActionContext<UserState, unknown>): Promise<void> {
     const data = {};
     commit(USER_MUTATIONS_TYPE.SET_CURRENT_USER, data);
@@ -19,5 +19,3 @@ const actions = {
     commit(USER_MUTATIONS_TYPE.SET_CURRENT_USER, {});
   }
 };
-
-export default actions;

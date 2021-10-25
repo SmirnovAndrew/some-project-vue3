@@ -7,7 +7,7 @@ import { user } from '@/store/modules/user';
 import { toaster } from '@/store/modules/toaster';
 import { MODULES_NAMES } from '@/store/names/modules.name';
 
-const store = createStore<RootState>({
+export const store = createStore<RootState>({
   plugins: process.env.NODE_ENV === 'production'
     ? []
     : [createLogger()],
@@ -21,5 +21,3 @@ const store = createStore<RootState>({
 
   }
 });
-
-export default store;
