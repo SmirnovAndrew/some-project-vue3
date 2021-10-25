@@ -1,4 +1,4 @@
-# ima-fe-vue
+# some-project-vue3
 
 ## Project setup
 ```
@@ -12,13 +12,32 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run build:prod
 ```
 
-### Lints and fixes files
+### Compiles and minifies for local serve
 ```
-npm run lint
+npm run build:local
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Previewing Locally
+```
+npm install -g serve
+serve -s dist
+```
+
+## Main dependencies
+`axios` `moment` `lodash`
+`postcss-prefix-selector`
+`vee-validate` `yup`
+`typescript`
+
+### default UI-Kit at this moment
+`primevue` `primeicons` `primeflex`
+
+---
+`.eslintrc.js`
+---
+right click -> "Apply ESLint Code Style Rules" to set linter in WebStorm
+
+<https://cli.vuejs.org/guide/deployment.html#general-guidelines>
