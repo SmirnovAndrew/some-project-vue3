@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
-import { ROUTER_NAMES } from '@/router/rote.names';
+import { ROUTER_NAMES } from '@/router/roter.names';
 
 export const routes: Array<RouteRecordRaw> = [
   {

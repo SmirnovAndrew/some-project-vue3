@@ -9,7 +9,7 @@ export const actions = {
     commit(USER_MUTATIONS_TYPE.SET_CURRENT_USER, data);
   },
 
-  async [USER_ACTIONS_TYPE.FETCH_LOG_IN]({ dispatch }: ActionContext<UserState, unknown>, payload: object): Promise<void> {
+  async [USER_ACTIONS_TYPE.FETCH_LOG_IN]({ dispatch }: ActionContext<UserState, unknown>, payload: any): Promise<void> {
     const data = payload;
     await dispatch(USER_ACTIONS_TYPE.FETCH_CURRENT_USER, data);
   },

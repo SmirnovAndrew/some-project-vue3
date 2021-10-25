@@ -1,4 +1,4 @@
-import store from '@/store';
+import { store } from '@/store';
 import { MODULES_NAMES } from '@/store/names/modules.name';
 import { ROOT_MUTATIONS_TYPE, TOASTER_MUTATIONS_TYPE, USER_MUTATIONS_TYPE } from '@/store/names/mutations.names';
 
