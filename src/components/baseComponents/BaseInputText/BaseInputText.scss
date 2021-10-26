@@ -1,0 +1,94 @@
+.ui-input-field {
+  &.p-field {
+    margin-bottom: 16px;
+
+    label {
+      font-size: $font-small;
+      color: $color-label-gray;
+      margin-bottom: 4px;
+
+      &.ui-disabled {
+        color: $color-gray-dark;
+      }
+    }
+  }
+
+  .p-inputtext {
+    border-radius: 0;
+    padding: $input-padding;
+    color: $color-main-black;
+    font-size: $font-medium;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled):not(.ui-error-input) {
+      border-color: $color-input-border-hover !important;
+    }
+
+    &:focus {
+      border-color: $color-main-blue !important;
+      box-shadow: $input-focus-shadow !important;
+    }
+
+    &::placeholder {
+      color: $color-placeholder;
+      font-family: Lato-Regular, serif;
+    }
+  }
+
+  .ui-error-input {
+    border-color: $color-error-red;
+  }
+
+  .ui-error-label {
+    color: $color-error-red !important;
+    font-size: $font-small;
+  }
+
+  .ui-inline-message {
+    margin-top: 8px;
+  }
+}
+
+.p-input-icon-right {
+
+  input {
+    padding-right: 40px !important;
+  }
+
+  .pi {
+    color: $color-main-blue !important;
+    font-size: 18px;
+  }
+
+  .pi-eye {
+    cursor: pointer;
+  }
+
+  &.p-input-remove-icon {
+
+    input {
+      padding-right: 60px !important;
+    }
+  }
+
+  .reset-icon {
+    user-select: none;
+    cursor: pointer;
+    right: 35px;
+    top: 13px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    color: $color-main-blue;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+

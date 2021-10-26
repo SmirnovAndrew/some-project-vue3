@@ -16,7 +16,13 @@ import('primeflex/primeflex.scss');
 createApp(App)
   .use(PrimeVue, {
     ripple: true,
-    locale: LOCALE_RU
+    locale: LOCALE_RU,
+    zIndex: {
+      modal: 2000,    //dialog, sidebar
+      overlay: 1000,  //dropdown, overlaypanel
+      menu: 1000,     //overlay menus
+      tooltip: 1100   //tooltip
+    }
   })
   .use(store)
   .use(router)
