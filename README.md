@@ -37,7 +37,7 @@ serve -s dist
 
 ---
 `.eslintrc.js` 
-#####right click -> "Apply ESLint Code Style Rules" to set linter in WebStorm
+right click -> "Apply ESLint Code Style Rules" to set linter in WebStorm
 
 <https://cli.vuejs.org/guide/deployment.html#general-guidelines>
 

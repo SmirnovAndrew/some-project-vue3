@@ -1,5 +1,6 @@
 <template>
   <div @click="resetStore()">Main Page</div>
+  <SomeForm />
 </template>
 
 <script src="./MainPage.ts" lang="ts"/>

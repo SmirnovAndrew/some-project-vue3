@@ -1,7 +1,7 @@
 <template>
   <BaseForm
-    :handleSubmit='submitLoginForm'
-    class="ui-login-form"
+    :handleSubmit='submitForm'
+    class="ui-some-form"
   >
     <template v-slot:form-content>
       <BaseInputText
@@ -16,10 +16,10 @@
         type="password"
         label="Пароль"
       />
-      <BaseButton label="Войти" :disabled="isSubmitting" />
+      <button type="submit" :disabled="isSubmitting">submit</button>
     </template>
   </BaseForm>
 </template>
 
-<script src="./FormLogin.ts" lang="ts"/>
-<style src="SomeForm.scss" lang="scss"/>
+<script src="./SomeForm.ts" lang="ts"/>
+<style src="./SomeForm.scss" lang="scss"/>

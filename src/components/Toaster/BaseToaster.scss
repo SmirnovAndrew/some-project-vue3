@@ -1,13 +1,8 @@
 .ui-message-wrapper {
-  z-index: 30000;
+  z-index: 3000;
   position: fixed;
   bottom: 24px;
   right: 24px;
-  margin-bottom: -8px;
   max-width: 350px;
   width: 100%;
-
-  .p-message-close {
-    margin-left: auto;
-  }
 }
